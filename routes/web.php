@@ -16,7 +16,7 @@ use Symfony\Component\HttpKernel\DataCollector\DataCollector;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.master');
 });
 
 // Route::get('/data', function () {

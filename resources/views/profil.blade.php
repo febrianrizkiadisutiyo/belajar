@@ -7,9 +7,14 @@
 {{-- <h1>{{ $name }}</h1> --}}
 
 {{-- <h1>{{ $nama }}</h1> --}}
+{{-- @foreach ($profil as $item)
+    <h1>{{ $item->alamat }}</h1>
+@endforeach --}}
+@extends('layouts.master')
+@section('content')
 @foreach ($profil as $item)
     <h1>{{ $item->alamat }}</h1>
 @endforeach
-
+@endsection
 
 

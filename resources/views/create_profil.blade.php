@@ -1,3 +1,5 @@
+@extends('layouts.master')
+@section('content')
 <form action="{{ url('storeprofil') }}" method="POST">
     @csrf
     <div class="mb-3">
@@ -8,3 +10,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+@endsection
